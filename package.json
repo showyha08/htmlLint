@@ -1,0 +1,22 @@
+{
+  "name": "htmllint",
+  "version": "1.0.0",
+  "description": "HTMLは構文ミスがあっても、もしくは廃止された要素や非推奨になった要素を使ったとしても、 ページが崩れることはあるが全く表示されないわけではない。 しかし、作成者が意図しない表示になった場合に、問題が起きているタグをHTMLの中から見つけることは容易ではない。 要素が何重にも入れ子になっていたり、1000行を超えたりするとなお問題の特定が困難になる。 そこで、Linterを導入し構文ミスに素早く気付けるようすることで、マークアップの効率を向上させることができるとともに HTML5の仕様に準拠したコードを書くことができる。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showyha08/htmlLint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/showyha08/htmlLint/issues"
+  },
+  "homepage": "https://github.com/showyha08/htmlLint#readme",
+  "dependencies": {
+    "markuplint": "^2.10.1"
+  }
+}
