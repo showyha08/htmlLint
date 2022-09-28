@@ -17,7 +17,7 @@
     "url": "https://github.com/showyha08/htmlLint/issues"
   },
   "homepage": "https://github.com/showyha08/htmlLint#readme",
-  "dependencies": {
+  "devDependencies": {
     "markuplint": "^2.10.1"
   }
 }
