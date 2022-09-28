@@ -47,6 +47,19 @@ HTML Living Standardの仕様に準拠したコードを書くことができる
 - スター：371
 - https://github.com/htmllint/htmllint
 
+## linthtml
+- htmllintをフォークしたツール
+- Inline Configurationを使ってルールを一時的に無効化できる
+- 更新:2022年9月14日
+- スター：70
+- https://github.com/linthtml/linthtml
+
+## vlint
+- ミツエーリンクスが開発
+- W3CやWhatWGでも利用されている Nu Html Checker を利用
+- https://www.npmjs.com/package/@mitsue/vlint
+- https://github.com/validator/validator/
+
 ## html-eslint
 - HTMLをサポートするESLintのプラグイン
 - 更新:2022年6月6日
@@ -55,9 +68,13 @@ HTML Living Standardの仕様に準拠したコードを書くことができる
 
 ## markuplint
 - テンプレートエンジンにも対応した静的解析ツール
+- 日本人開発者が主導で開発している
 - 更新:2022年9月7日
 - スター：310
 - https://github.com/markuplint/markuplint
 - https://marketplace.visualstudio.com/items?itemName=yusukehirao.vscode-markuplint
 
-
+## sonerlint
+- HTMLだけでなくJavaScriptやJavaなど複数の言語に対応
+- https://www.sonarlint.org/
+- https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
