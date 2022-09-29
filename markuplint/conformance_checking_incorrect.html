@@ -1,0 +1,40 @@
+<!-- Attributes duplication case-insensitive-->
+<div data-attr="value" data-Attr="db"></div>
+
+<!-- Character reference -->
+<div id="a"> > < & " </div>
+<img src="path/to?a=b&c=d">
+
+<!-- Deprecated attributes -->
+<img src="path/to" alt="any picture" align="top" />
+
+<!-- Deprecated elements -->
+<font color="red">lorem</font>
+
+<!-- Disallowed elements -->
+<!-- When specified { "disallowed-element": ["hgroup"] }: -->
+<div>
+	<hgroup><h1>Heading</h1></hgroup>
+</div>
+
+<!-- The "id" attribute value duplication -->
+<div id="a">
+	<p id="a">lorem</p>
+</div>
+
+<!-- Disallow the ineffective attribute -->
+<script defer>
+  const code = 'It is inline';
+</script>
+
+<!-- Invalid Attribute -->
+<div unexist-attr>
+  <button tabindex="non-integer">The Button</button>
+  <a href="/" referrerpolicy="invalid-value">The Anchor</a>
+</div>
+
+<!-- Permitted contents -->
+<ul>
+  <div>Not allowed DIV element</div>
+</ul>
+<ul>Not allowed text node</ul>

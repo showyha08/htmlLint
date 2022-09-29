@@ -15,3 +15,8 @@ $ npx markuplint --init
 
 ## VS Code 拡張機能
 https://marketplace.visualstudio.com/items?itemName=yusukehirao.vscode-markuplint
+
+## 実行方法
+```
+$ npm run html:lint
+```

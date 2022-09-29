@@ -1,0 +1,51 @@
+<!-- Attributes duplication -->
+<div data-attr="value" data-Attr2="db"></div>
+
+<!-- Character reference -->
+<div id="a"> &gt; &lt; &amp; &quot; </div>
+<img src="path/to?a=b&amp;c=d">
+
+<!-- Deprecated attributes -->
+<img src="path/to" alt="any picture" style="vertical-align: center" />
+
+<!-- Deprecated elements -->
+<span class="red">lorem</span>
+
+<!-- Disallowed elements -->
+<!-- When specified { "disallowed-element": ["hgroup"] }: -->
+<div>
+  <h1>Heading</h1>
+</div>
+
+<!-- The "id" attribute value duplication -->
+<div id="c">
+  <p id="d">lorem</p>
+</div>
+
+<!-- Disallow the ineffective attribute -->
+<script>
+  const code = 'It is inline';
+</script>
+
+<!-- Invalid Attribute -->
+<div>
+  <button tabindex="0">The Button</button>
+  <a href="/" referrerpolicy="no-referrer">The Anchor</a>
+</div>
+
+<!-- Permitted contents -->
+<ul>
+  <li>List item</li>
+  <li>List item</li>
+</ul>
+
+<!-- Required attributes -->
+<!-- When the alt attribute is required, set {"required-attr": "alt"}. -->
+<img src="/path/to/image.png" alt="alternative text" />
+
+<!-- Required elements -->
+<!-- When specified { "required-element": ["meta[charset=\"UTF-8\"]"] }: -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Page title</title>
+</head>
