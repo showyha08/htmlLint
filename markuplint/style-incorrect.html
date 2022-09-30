@@ -1,0 +1,53 @@
+<!-- ★★★★★ -->
+<!-- Style -->
+<!-- ★★★★★ -->
+
+<!-- Spaces after the equal of attribute -->
+
+<img src= "path/to">
+<img src = "path/to">
+<img
+	src=
+	"path/to">
+<img
+	src
+	=
+	"path/to">
+
+    <!-- Spaces before the "equal" of attribute -->
+    <img src ="path/to">
+    <img src = "path/to">
+    <img
+      src
+      ="path/to">
+    <img
+      src
+      =
+      "path/to">
+
+      <!-- Spaces between attributes -->
+      <img src="path/to" src="path/to2">
+
+<!-- case-sensitive-attr-name -->
+<div DATA-ATTR></div>
+<div Data-Attr></div>
+
+<!-- case-sensitive-tag-name -->
+<DIV><p>lorem</p></DIV>
+<IMG src="path/to">
+
+<!-- end-tag -->
+<div>
+	<span>There is not an end tag.
+</div>
+
+<!-- indentation -->
+<div>
+  <span>lorem</span>
+	ipsam
+   </div>
+
+<!-- no-boolean-attr-value -->
+<input type="text" required="required" />
+
+<!-- no-default-value -->

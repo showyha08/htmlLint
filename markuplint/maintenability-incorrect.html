@@ -6,3 +6,6 @@
 const id = uid();
 <div id={id}></div>;
 const Component = ({ id }) => <div id={id}></div>;
+
+<!-- No use event handler attribute -->
+<div onclick="() => doSomething()">Click</div>
