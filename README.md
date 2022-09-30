@@ -37,9 +37,17 @@ HTMLは構文ミスがあっても、もしくは廃止された要素や非推�
 </svg>
 ```
 
-# HTML用のLinter候補
-スター数も多く現在も更新が継続されている *markuplint* を選定したい。
+# Linterの選定について
+GitHubのリポジトリからスター数が多く現在も更新が継続されている *markuplint* を選定したいと考えた。
+しかし、他の方の意見を聞いてみると日本製ツールの場合メンテナンスがされなくなる可能性が高いとのこと。
+たしかにGitHub上のスター数は多いが、npmjsでダウンロード数を比較すると、
+eslint-plugin-html の方が圧倒的にWeeky Downloadsが多い。
+参考：https://www.npmjs.com/package/eslint-plugin-html
+参考：https://www.npmjs.com/package/markuplint
+eslint-plugin-html でしかできない事は無いのか調査を行い、
+markuplintと比較した後に選定することとする。
 
+# Linter候補
 ## htmllint
 - タスクランナー(Gulp, Grunt)、CLIで利用する静的解析ツール
 - 更新:3年前
