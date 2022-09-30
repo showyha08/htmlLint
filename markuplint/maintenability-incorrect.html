@@ -1,0 +1,8 @@
+<!-- ★★★★★★★★★★★★★★ -->
+<!-- Maintenability -->
+<!-- ★★★★★★★★★★★★★★ -->
+
+<!-- Disallow hard-code the id attribute -->
+const id = uid();
+<div id={id}></div>;
+const Component = ({ id }) => <div id={id}></div>;

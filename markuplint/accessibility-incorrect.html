@@ -1,3 +1,58 @@
 <!-- ★★★★★★★★★★★★★★★★★★★★ -->
-<!-- Conformance checking -->
+<!-- Accessibility        -->
 <!-- ★★★★★★★★★★★★★★★★★★★★ -->
+
+<!-- Landmark roles -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>...</header>
+    <nav>...</nav>
+    <main>
+      <header>...</header>
+      <footer>...</footer>
+      <nav>Duplicate navigation landmarks without a label</nav>
+      <aside>Complementary landmark not at the top level</aside>
+    </main>
+    <footer>...</footer>
+  </body>
+</html>
+
+<!-- Disallow referring to non-existent ID -->
+<label for="foo">Text Field</label>
+<input id="bar" type="text" />
+
+<!-- Examples of incorrect code for this rule -->
+<button>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Level-one heading in document required -->
+<html>
+  <head>
+    <title>page</title>
+  </head>
+  <body>
+    <main>
+      <p>text</p>
+    </main>
+  </body>
+</html>
+
+<!-- Use list element -->
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Citrus</li>
+</ul>
+
+<!-- WAI-ARIA -->
+<div role="landmark" aria-busy="busy">
+  <ul>
+    <li role="button">an item</li>
+  </ul>
+  <button aria-checked="true">Click me!</button>
+</div>
+
