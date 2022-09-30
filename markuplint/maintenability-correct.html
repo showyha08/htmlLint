@@ -1,0 +1,12 @@
+<!-- ★★★★★★★★★★★★★★ -->
+<!-- Maintenability -->
+<!-- ★★★★★★★★★★★★★★ -->
+
+<!-- Disallow hard-code the id attribute -->
+<div id="foo"></div>
+
+<!-- No use event handler attribute -->
+<div id="foo">Click</div>
+<script>
+  document.getElementById('foo').addEventListener('click', () => doSomething());
+</script>
