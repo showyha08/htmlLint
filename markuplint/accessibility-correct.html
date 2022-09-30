@@ -1,0 +1,31 @@
+<!-- ★★★★★★★★★★★★★★★★★★★★ -->
+<!-- Accessibility        -->
+<!-- ★★★★★★★★★★★★★★★★★★★★ -->
+
+<!-- Landmark roles -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>...</header>
+    <nav aria-label="main">...</nav>
+    <main>
+      <header>...</header>
+      <footer>...</footer>
+      <nav aria-label="sub">...</nav>
+    </main>
+    <aside>...</aside>
+    <footer>...</footer>
+  </body>
+</html>
+
+<!-- Disallow referring to non-existent ID -->
+<label for="foo">Text Field</label>
+<input id="foo" type="text" />
+
+<!-- Require accessible name -->
+<button>
+  <span class="visually-hidden">Menu</span>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>

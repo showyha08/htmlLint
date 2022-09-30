@@ -1,3 +1,7 @@
+<!-- ★★★★★★★★★★★★★★★★★★★★ -->
+<!-- Conformance checking -->
+<!-- ★★★★★★★★★★★★★★★★★★★★ -->
+
 <!-- Attributes duplication case-insensitive-->
 <div data-attr="value" data-Attr="db"></div>
 
@@ -38,3 +42,13 @@
   <div>Not allowed DIV element</div>
 </ul>
 <ul>Not allowed text node</ul>
+
+<!-- Required attributes -->
+<!-- When the alt attribute is required, set {"required-attr": "alt"}. -->
+<img src="/path/to/image.png" />
+
+<!-- Required elements -->
+<!-- When specified { "required-element": ["meta[charset=\"UTF-8\"]"] }: -->
+<head>
+  <title>Page title</title>
+</head>
