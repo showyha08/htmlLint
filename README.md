@@ -42,10 +42,14 @@ GitHubのリポジトリからスター数が多く現在も更新が継続さ�
 しかし、他の方の意見を聞いてみると日本製ツールの場合メンテナンスがされなくなる可能性が高いとのこと。
 たしかにGitHub上のスター数は多いが、npmjsでダウンロード数を比較すると、
 eslint-plugin-html の方が圧倒的にWeeky Downloadsが多い。
-参考：https://www.npmjs.com/package/eslint-plugin-html
-参考：https://www.npmjs.com/package/markuplint
-eslint-plugin-html でしかできない事は無いのか調査を行い、
-markuplintと比較した後に選定することとする。
+eslint-plugin-html でしかできない事は無いのか調査を行い、markuplintと比較した後に選定することとする。
+
+![markuplint-vs-eslint-html-plugin](https://user-images.githubusercontent.com/36416614/193305737-1056d81d-016a-4630-a02f-68366f05a711.png)
+
+[eslint-plugin-html](https://www.npmjs.com/package/eslint-plugin-html)
+[markuplint](https://www.npmjs.com/package/markuplint)
+
+
 
 # Linter候補
 ## htmllint
