@@ -89,3 +89,9 @@ eslint-plugin-html でしかできない事は無いのか調査を行い、mark
 - HTMLだけでなくJavaScriptやJavaなど複数の言語に対応
 - https://www.sonarlint.org/
 - https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode
+
+## textlint
+- 自然言語のチェックツール
+- プラグインによってHTMLにも対応可能
+- 弁護士ドットコムやSmartHRでも利用実績がある
+- https://github.com/textlint/textlint
